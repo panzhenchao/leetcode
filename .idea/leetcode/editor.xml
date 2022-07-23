@@ -72,10 +72,10 @@
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/[299]猜数字游戏.java">
           <value>
             <LeetcodeEditor>
-              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/[299]猜数字游戏.md" />
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/content/BullsAndCows.md" />
               <option name="frontendQuestionId" value="leetcode.cn299" />
               <option name="host" value="leetcode.cn" />
-              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/[299]猜数字游戏.java" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/BullsAndCows.java" />
               <option name="titleSlug" value="bulls-and-cows" />
             </LeetcodeEditor>
           </value>
@@ -99,6 +99,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/removeElement.java" />
               <option name="titleSlug" value="remove-element" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/BullsAndCows.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/content/BullsAndCows.md" />
+              <option name="frontendQuestionId" value="leetcode.cn299" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/BullsAndCows.java" />
+              <option name="titleSlug" value="bulls-and-cows" />
             </LeetcodeEditor>
           </value>
         </entry>
