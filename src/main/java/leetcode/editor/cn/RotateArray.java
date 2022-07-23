@@ -1,4 +1,4 @@
-package main.java.leetcode.editor.cn;
+package leetcode.editor.cn;
 
 //给你一个数组，将数组中的元素向右轮转 k 个位置，其中 k 是非负数。 
 //
@@ -50,17 +50,34 @@ package main.java.leetcode.editor.cn;
 // 
 // Related Topics 数组 数学 双指针 👍 1540 👎 0
 
+import com.alibaba.fastjson.JSON;
+
+import java.util.Arrays;
+
 public class RotateArray{
     public static void main(String[] args) {
     	
         Solution solution = new RotateArray().new Solution();
-        
+        int[] nums =new int[]{-1,-99,100,3};
+        int k=2;
+        solution.rotate(nums,k);
+        System.out.println( JSON.toJSONString(nums));
     }
 
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public void rotate(int[] nums, int k) {
-
+        int size=nums.length;
+        if(size==0){
+            return;
+        }
+        k=k%size;
+       int [] nums2= new int[size];
+       for(int i=0;i<size;i++){
+           int b =(i+k)%(size);
+           nums2[b]=nums[i];
+       }
+System.arraycopy(nums2,0,nums,0,size);
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
