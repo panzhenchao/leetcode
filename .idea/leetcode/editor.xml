@@ -113,6 +113,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/CheckIfAllAsAppearsBeforeAllBs.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/content/CheckIfAllAsAppearsBeforeAllBs.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2124" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/CheckIfAllAsAppearsBeforeAllBs.java" />
+              <option name="titleSlug" value="check-if-all-as-appears-before-all-bs" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/GasStation.java">
           <value>
             <LeetcodeEditor>
