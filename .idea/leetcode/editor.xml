@@ -83,10 +83,10 @@
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/[剑指 Offer 57]和为s的两个数字.java">
           <value>
             <LeetcodeEditor>
-              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/[剑指 Offer 57]和为s的两个数字.md" />
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/content/HeWeiSdeLiangGeShuZiLcof.md" />
               <option name="frontendQuestionId" value="leetcode.cn剑指 Offer 57" />
               <option name="host" value="leetcode.cn" />
-              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/[剑指 Offer 57]和为s的两个数字.java" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/HeWeiSdeLiangGeShuZiLcof.java" />
               <option name="titleSlug" value="he-wei-sde-liang-ge-shu-zi-lcof" />
             </LeetcodeEditor>
           </value>
@@ -121,6 +121,28 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/GasStation.java" />
               <option name="titleSlug" value="gas-station" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/HeWeiSdeLiangGeShuZiLcof.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/content/HeWeiSdeLiangGeShuZiLcof.md" />
+              <option name="frontendQuestionId" value="leetcode.cn剑指 Offer 57" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/HeWeiSdeLiangGeShuZiLcof.java" />
+              <option name="titleSlug" value="he-wei-sde-liang-ge-shu-zi-lcof" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/PascalsTriangleIi.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/content/PascalsTriangleIi.md" />
+              <option name="frontendQuestionId" value="leetcode.cn119" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/PascalsTriangleIi.java" />
+              <option name="titleSlug" value="pascals-triangle-ii" />
             </LeetcodeEditor>
           </value>
         </entry>
