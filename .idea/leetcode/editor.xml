@@ -146,6 +146,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/LengthOfLastWord.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/content/LengthOfLastWord.md" />
+              <option name="frontendQuestionId" value="leetcode.cn58" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/LengthOfLastWord.java" />
+              <option name="titleSlug" value="length-of-last-word" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/LongestCommonPrefix.java">
           <value>
             <LeetcodeEditor>
