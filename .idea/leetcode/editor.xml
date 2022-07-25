@@ -91,6 +91,28 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/checkIfAllAsAppearsBeforeAllBs.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/checkIfAllAsAppearsBeforeAllBs.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2124" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/checkIfAllAsAppearsBeforeAllBs.java" />
+              <option name="titleSlug" value="check-if-all-as-appears-before-all-bs" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/isomorphicStrings.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/content/isomorphicStrings.md" />
+              <option name="frontendQuestionId" value="leetcode.cn205" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/isomorphicStrings.java" />
+              <option name="titleSlug" value="isomorphic-strings" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/removeElement.java">
           <value>
             <LeetcodeEditor>
@@ -116,10 +138,10 @@
         <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/CheckIfAllAsAppearsBeforeAllBs.java">
           <value>
             <LeetcodeEditor>
-              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/content/CheckIfAllAsAppearsBeforeAllBs.md" />
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/checkIfAllAsAppearsBeforeAllBs.md" />
               <option name="frontendQuestionId" value="leetcode.cn2124" />
               <option name="host" value="leetcode.cn" />
-              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/CheckIfAllAsAppearsBeforeAllBs.java" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/checkIfAllAsAppearsBeforeAllBs.java" />
               <option name="titleSlug" value="check-if-all-as-appears-before-all-bs" />
             </LeetcodeEditor>
           </value>
@@ -242,6 +264,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/RotateArray.java" />
               <option name="titleSlug" value="rotate-array" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/isomorphicStrings.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/content/isomorphicStrings.md" />
+              <option name="frontendQuestionId" value="leetcode.cn205" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/isomorphicStrings.java" />
+              <option name="titleSlug" value="isomorphic-strings" />
             </LeetcodeEditor>
           </value>
         </entry>
