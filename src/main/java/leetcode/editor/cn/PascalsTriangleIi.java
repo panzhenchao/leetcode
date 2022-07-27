@@ -57,25 +57,25 @@ public class PascalsTriangleIi{
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public List<Integer> getRow(int rowIndex) {
-        List<List<Integer>> triangle = new ArrayList<>();
-        triangle.add(new ArrayList<>());
-        //第一行就一个1
-        triangle.get(0).add(1);
-
+        List<List<Integer>> target=new ArrayList<>();
+        List<Integer> oneList=new ArrayList<>();
+        oneList.add(1);
+        target.add(oneList);
         for(int i=1;i<=rowIndex;i++){
-            List<Integer> row = new ArrayList<>();
-            List<Integer> prevRow = triangle.get(i-1);
-            //每行的第一个一定是1
-            row.add(1);
-
+            List<Integer> list=new ArrayList<>();
+            list.add(1);
             for(int j=1;j<i;j++){
-                row.add(prevRow.get(j-1)+prevRow.get(j));
+                List<Integer> lastTarget = target.get(i-1);
+                list.add(lastTarget.get(j-1)+lastTarget.get(j));
             }
-            //每行的最后一个一定是1
-            row.add(1);
-            triangle.add(row);
+            list.add(1);
+            target.add(list);
         }
-        return triangle.get(rowIndex);
+        return target.get(rowIndex);
+
+
+
+
 
     }
 }
