@@ -49,7 +49,7 @@ public class PlusOne{
     public static void main(String[] args) {
     	
         Solution solution = new PlusOne().new Solution();
-        int[] digits=new int[]{9,9,9,9};
+        int[] digits=new int[]{1,2,9};
         System.out.println(JSON.toJSON(solution.plusOne(digits)));
     }
 
@@ -57,19 +57,15 @@ public class PlusOne{
 class Solution {
     public int[] plusOne(int[] digits) {
         int n=digits.length;
-        int [] revet=new int[n+1];
-        int b=1;
         for(int i=n-1;i>=0;i--){
-            int c=(digits[i]+b)%10;
-             b = (digits[i]+b)/10;
-            revet[i+1]=c;
-            if(i==0){
-                revet[0]=b;
+            digits[i]=(digits[i]+1)%10;
+            //如果这边不返回说明需要进一位
+            if(digits[i]!=0){
+                return digits;
             }
         }
-        if(revet[0]==0){
-            return Arrays.copyOfRange(revet,1,n+1);
-        }
+        int[] revet=new int[n+1];
+        revet[0]=1;
         return revet;
     }
 }
