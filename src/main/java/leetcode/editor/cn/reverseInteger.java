@@ -1,3 +1,5 @@
+package leetcode.editor.cn;
+
 //给你一个 32 位的有符号整数 x ，返回将 x 中的数字部分反转后的结果。 
 //
 // 如果反转后整数超过 32 位的有符号整数的范围 [−2³¹, 231 − 1] ，就返回 0。 
@@ -42,34 +44,28 @@
 // 
 // Related Topics 数学 👍 3569 👎 0
 
-package leetcode.editor.cn;
-class reverseInteger{
-    //2022-07-26 09:17:05
-    //整数反转
-    //编号：[7]
-    
+public class ReverseInteger{
     public static void main(String[] args) {
-        Solution solution = new reverseInteger().new Solution();
-        // TO TEST
-        int x=-1534236469;
+    	
+        Solution solution = new ReverseInteger().new Solution();
+        int x=-123;
         System.out.println(solution.reverse(x));
     }
-    //leetcode submit region begin(Prohibit modification and deletion)
+
+//leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int reverse(int x) {
-        int revet=0;
-        while (x!=0){
-
-
-            if((revet < Integer.MIN_VALUE / 10 || revet > Integer.MAX_VALUE / 10)){
-                return 0;
+            int revet=0;
+            while (x!=0){
+                if(Integer.MIN_VALUE/10>revet||revet>Integer.MAX_VALUE/10){
+                    return 0;
+                }
+                int b=x%10;
+                revet=revet*10+b;
+                x=x/10;
             }
+            return revet;
 
-            int tem=x%10;
-            x=x/10;
-            revet=revet*10+tem;
-        }
-        return revet;
 
     }
 }
