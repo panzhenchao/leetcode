@@ -83,11 +83,11 @@ class binaryTreePreorderTraversal{
  */
 class Solution {
     public List<Integer> preorderTraversal(TreeNode root) {
-        List<Integer> list = new ArrayList<>();
+        ArrayList<Integer> list = new ArrayList<>();
         digui(list,root);
         return list;
     }
-    private void digui(List<Integer> list,TreeNode root){
+    private void digui(List<Integer> list ,TreeNode root){
         if(root==null){
             return;
         }
