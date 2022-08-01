@@ -66,30 +66,33 @@ class binaryTreeLevelOrderTraversal{
  */
 class Solution {
     public List<List<Integer>> levelOrder(TreeNode root) {
-        List<List<Integer>> lists=new ArrayList<>();
-        Queue<TreeNode> queue = new LinkedList<>();
-
-        if(root==null){
+        List<List<Integer>> lists = new ArrayList<>();
+        if (root == null) {
             return lists;
         }
+        Queue<TreeNode> queue = new LinkedBlockingQueue<TreeNode>();
         queue.offer(root);
-        while (!queue.isEmpty()){
-            int n = queue.size();
+        while (!queue.isEmpty()) {
+            int size = queue.size();
             ArrayList<Integer> list = new ArrayList<>();
-            for(int i=0;i<n;i++){
-                TreeNode temNode = queue.poll();
-                list.add(temNode.val);
-                if(temNode.left!=null){
-                    queue.offer(temNode.left);
+            for (int i = 0; i < size; i++) {
+                TreeNode poll = queue.poll();
+                list.add(poll.val);
+                if (poll.left != null) {
+                    queue.offer(poll.left);
                 }
-                if(temNode.right!=null){
-                    queue.offer(temNode.right);
+                if (poll.right != null) {
+                    queue.offer(poll.right);
                 }
+
+
             }
             lists.add(list);
 
+
         }
         return lists;
+
 
     }
 
