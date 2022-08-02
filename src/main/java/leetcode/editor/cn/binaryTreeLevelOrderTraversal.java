@@ -70,26 +70,23 @@ class Solution {
         if (root == null) {
             return lists;
         }
-        Queue<TreeNode> queue = new LinkedBlockingQueue<TreeNode>();
+
+        LinkedBlockingQueue<TreeNode> queue = new LinkedBlockingQueue<>();
         queue.offer(root);
-        while (!queue.isEmpty()) {
-            int size = queue.size();
-            ArrayList<Integer> list = new ArrayList<>();
-            for (int i = 0; i < size; i++) {
+        while (!queue.isEmpty()){
+            int n = queue.size();
+            ArrayList<Integer> list = new ArrayList<>(n);
+            for(int i=0;i<n;i++){
                 TreeNode poll = queue.poll();
                 list.add(poll.val);
-                if (poll.left != null) {
+                if(poll.left!=null){
                     queue.offer(poll.left);
                 }
-                if (poll.right != null) {
+                if(poll.right!=null){
                     queue.offer(poll.right);
                 }
-
-
             }
             lists.add(list);
-
-
         }
         return lists;
 
