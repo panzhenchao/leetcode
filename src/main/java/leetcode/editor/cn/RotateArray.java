@@ -58,8 +58,8 @@ public class RotateArray {
     public static void main(String[] args) {
 
         Solution solution = new RotateArray().new Solution();
-        int[] nums = new int[]{-1, -100, 3, 99};
-        int k = 3;
+        int[] nums = new int[]{-1};
+        int k = 0;
         solution.rotate(nums, k);
         System.out.println(JSON.toJSONString(nums));
     }
@@ -67,31 +67,26 @@ public class RotateArray {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public void rotate(int[] nums, int k) {
-            int n = nums.length;
-            k = k % n;
 
-
-            int count = gcd(k, n);
-
-            for (int i = 0; i < count; i++) {
-                int current = i;
-                int prev = nums[i];
-                do {
-                    int next = (current + k) % n;
-                    int tempNext = nums[next];
-                    nums[next] = prev;
-                    current = next;
-                    prev = tempNext;
-                } while (i != current);
+            int length = nums.length;
+            k=k%length;
+            //整体翻转
+            revote(nums,0,length-1);
+            //左边进行翻转
+            revote(nums,0,k-1);
+            revote(nums,k,length-1);
+        }
+        private void revote(int[] nums,int left, int right){
+            while (left<right){
+                int tem = nums[left];
+                nums[left]=nums[right];
+                nums[right]=tem;
+                left++;
+                right--;
             }
         }
-
-        private int gcd(int x, int y) {
-            return y > 0 ? gcd(y, x % y) : x;
-        }
-
-
     }
+
 
 
 //leetcode submit region end(Prohibit modification and deletion)
