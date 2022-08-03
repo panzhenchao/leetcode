@@ -39,10 +39,10 @@
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/TwoSum.java">
           <value>
             <LeetcodeEditor>
-              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/TwoSum.md" />
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/content/twoSum.md" />
               <option name="frontendQuestionId" value="leetcode.cn1" />
               <option name="host" value="leetcode.cn" />
-              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/TwoSum.java" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/TwoSum.java" />
               <option name="titleSlug" value="two-sum" />
             </LeetcodeEditor>
           </value>
@@ -311,6 +311,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/TwoSum.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/content/twoSum.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/TwoSum.java" />
+              <option name="titleSlug" value="two-sum" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/addBinary.java">
           <value>
             <LeetcodeEditor>
@@ -333,6 +344,50 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/binaryTreeInorderTraversal.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/content/binaryTreeInorderTraversal.md" />
+              <option name="frontendQuestionId" value="leetcode.cn94" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/binaryTreeInorderTraversal.java" />
+              <option name="titleSlug" value="binary-tree-inorder-traversal" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/binaryTreeLevelOrderTraversal.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/content/binaryTreeLevelOrderTraversal.md" />
+              <option name="frontendQuestionId" value="leetcode.cn102" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/binaryTreeLevelOrderTraversal.java" />
+              <option name="titleSlug" value="binary-tree-level-order-traversal" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/binaryTreePostorderTraversal.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/content/binaryTreePostorderTraversal.md" />
+              <option name="frontendQuestionId" value="leetcode.cn145" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/binaryTreePostorderTraversal.java" />
+              <option name="titleSlug" value="binary-tree-postorder-traversal" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/binaryTreePreorderTraversal.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/content/binaryTreePreorderTraversal.md" />
+              <option name="frontendQuestionId" value="leetcode.cn144" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/binaryTreePreorderTraversal.java" />
+              <option name="titleSlug" value="binary-tree-preorder-traversal" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/compareVersionNumbers.java">
           <value>
             <LeetcodeEditor>
@@ -352,6 +407,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/isomorphicStrings.java" />
               <option name="titleSlug" value="isomorphic-strings" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/multiplyStrings.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/content/multiplyStrings.md" />
+              <option name="frontendQuestionId" value="leetcode.cn43" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/multiplyStrings.java" />
+              <option name="titleSlug" value="multiply-strings" />
             </LeetcodeEditor>
           </value>
         </entry>

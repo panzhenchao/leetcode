@@ -54,32 +54,46 @@ import com.alibaba.fastjson.JSON;
 
 import java.util.Arrays;
 
-public class RotateArray{
+public class RotateArray {
     public static void main(String[] args) {
-    	
+
         Solution solution = new RotateArray().new Solution();
-        int[] nums =new int[]{-1,-99,100,3};
-        int k=2;
-        solution.rotate(nums,k);
-        System.out.println( JSON.toJSONString(nums));
+        int[] nums = new int[]{-1, -100, 3, 99};
+        int k = 3;
+        solution.rotate(nums, k);
+        System.out.println(JSON.toJSONString(nums));
     }
 
-//leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
-    public void rotate(int[] nums, int k) {
-        int size=nums.length;
-        if(size==0){
-            return;
+    //leetcode submit region begin(Prohibit modification and deletion)
+    class Solution {
+        public void rotate(int[] nums, int k) {
+            int n = nums.length;
+            k = k % n;
+
+
+            int count = gcd(k, n);
+
+            for (int i = 0; i < count; i++) {
+                int current = i;
+                int prev = nums[i];
+                do {
+                    int next = (current + k) % n;
+                    int tempNext = nums[next];
+                    nums[next] = prev;
+                    current = next;
+                    prev = tempNext;
+                } while (i != current);
+            }
         }
-        k=k%size;
-       int [] nums2= new int[size];
-       for(int i=0;i<size;i++){
-           int b =(i+k)%(size);
-           nums2[b]=nums[i];
-       }
-System.arraycopy(nums2,0,nums,0,size);
-    }
-}
-//leetcode submit region end(Prohibit modification and deletion)
 
+        private int gcd(int x, int y) {
+            return y > 0 ? gcd(y, x % y) : x;
+        }
+
+
+    }
+
+
+//leetcode submit region end(Prohibit modification and deletion)
 }
+

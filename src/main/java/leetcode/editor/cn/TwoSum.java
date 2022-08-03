@@ -51,14 +51,19 @@ package leetcode.editor.cn;
 
 
 
+import com.alibaba.fastjson.JSON;
+
 import java.util.HashMap;
+import java.util.Map;
 
 public class TwoSum{
     public static void main(String[] args) {
     	
         Solution solution = new TwoSum().new Solution();
-        int[] nums=new int[]{};
-        int  target=1;
+        int[] nums=new int[]{0,4,3,0};
+        int  target=0;
+        System.out.println(JSON.toJSONString(solution.twoSum(nums,target)));
+
 
 
 
@@ -68,19 +73,17 @@ public class TwoSum{
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int[] twoSum(int[] nums, int target) {
-        int length = nums.length;
-        if(length<2){
-            return new int[]{};
-        }
-        HashMap<Integer, Integer> map = new HashMap<>(length);
-        for(int i=0;i<length;i++){
-            int num = nums[i];
-            if(map.containsKey(target-num)){
-                return new int[]{i,map.get(target-num)};
-            }else {
-                map.put(num,i);
-            }
-        }
+       Map<Integer,Integer> map= new HashMap<Integer,Integer>();
+       if(nums.length<2){
+           return new int[]{};
+       }
+       for(int i=0;i<nums.length;i++){
+           Integer revetNum = map.get(target - nums[i]);
+           if (revetNum != null) {
+               return new int[]{revetNum, i};
+           }
+           map.put(nums[i],i);
+       }
         return new int[]{};
     }
 }
