@@ -30,12 +30,13 @@ package leetcode.editor.cn;
 // Related Topics 递归 双指针 字符串 👍 624 👎 0
 
 import com.alibaba.fastjson.JSON;
+import com.sun.org.apache.xpath.internal.WhitespaceStrippingElementMatcher;
 
 public class ReverseString{
     public static void main(String[] args) {
     	
         Solution solution = new ReverseString().new Solution();
-        char[] s=new char[]{'h','e','1','l','o'};
+        char[] s=new char[]{'1'};
         solution.reverseString(s);
         System.out.println(JSON.toJSON(s));
     }
@@ -43,18 +44,16 @@ public class ReverseString{
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public void reverseString(char[] s) {
-        int n = s.length;
-        if(n<2){
-            return;
-        }
+        int n=s.length;
         int left=0;
         int right=n-1;
         while (left<right){
-            char a=s[left];
+            char tem=s[left];
             s[left]=s[right];
-            s[right]=a;
+            s[right]=tem;
             left++;
             right--;
+
         }
     }
 }
