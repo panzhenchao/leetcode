@@ -53,49 +53,49 @@ public class GasStation{
     public static void main(String[] args) {
     	
         Solution solution = new GasStation().new Solution();
-        int[] gas=new int[]{2,3,4};
-        int[] cost=new int[]{3,4,3};
+        int[] gas=new int[]{1,2,3,4,5};
+        int[] cost=new int[]{3,4,5,1,2};
         System.out.println(solution.canCompleteCircuit(gas,cost));
     }
 
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int canCompleteCircuit(int[] gas, int[] cost) {
-        int sum = Arrays.stream(gas).sum();
-        int sum1 = Arrays.stream(cost).sum();
-        if(sum<sum1){
-            return -1;
-        }
-        if(gas.length==0){
-            return 0;
-        }
-        if(gas.length==1){
-            return gas[0]>=gas[0]?0:-1;
-        }
-        for(int i=0;i<gas.length;i++){
-                if(gas[i]<=cost[i]){
-                    continue;
-                }
-                if(check(gas,cost,i)){
-                    return i;
-                }
-            }
-            return -1;
+       int n=gas.length;
+       int i=0;
+       while(i<n){
+           //单个检查 返回经过的加油站数量
+           int total = check(gas, cost, i);
+           if(total==n){
+               return i;
+           }
+           //下一个是当前加油站的下一个
+           i=i+total+1;
+       }
+       return -1;
+
     }
-    private boolean check(int[] gas, int[] cost,int k){
-        int gasNum=0;
-        int costNum=0;
-        int n = gas.length;
-        for(int i=0;i<n;i++){
-            int s=(i+k)%n;
-            gasNum+=gas[s];
-            costNum+=cost[s];
-            if(gasNum<costNum){
-                return false;
+    /*
+        返回走过的加油站数量
+     */
+    private int check(int[] gas, int[] cost,int i){
+        int gasTotal=0;
+        int costTotal=0;
+        int n=gas.length;
+        int count=0;
+        for(int k=0;k<n;k++){
+            int tem=(i+k)%n;
+            gasTotal+=gas[tem];
+            costTotal+=cost[tem];
+            if(gasTotal<costTotal){
+                return count;
             }
+            count++;
         }
-        return true;
+        return count;
     }
+
+
 }
 //leetcode submit region end(Prohibit modification and deletion)
 
