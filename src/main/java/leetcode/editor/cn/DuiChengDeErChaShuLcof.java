@@ -40,6 +40,8 @@ package leetcode.editor.cn;
 // Related Topics 树 深度优先搜索 广度优先搜索 二叉树 👍 371 👎 0
 
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.concurrent.LinkedBlockingQueue;
 
 public class DuiChengDeErChaShuLcof{
@@ -65,59 +67,31 @@ public class DuiChengDeErChaShuLcof{
  */
 class Solution {
     public boolean isSymmetric(TreeNode root) {
-        if(root==null){
-            return true;
-        }
-        LinkedBlockingQueue<TreeNode> queue = new LinkedBlockingQueue<>();
-        queue.offer(root);
+
+        return check(root,root);
+
+    }
+    private boolean check(TreeNode rootLeft,TreeNode rootRight){
+        Queue<TreeNode> queue = new LinkedList<TreeNode>();
+        queue.offer(rootLeft);
+        queue.offer(rootRight);
         while (!queue.isEmpty()){
-            int size = queue.size();
-            ArrayList<Integer> list = new ArrayList<>();
-            int nextCount=0;
-            for(int i=0;i<size;i++){
-                TreeNode treeNode = queue.poll();
-                list.add(treeNode.val);
-                if(treeNode.left!=null){
-                    nextCount++;
-                    queue.offer(treeNode.left);
-                }else {
-                    queue.offer(new TreeNode(101));
-                }
-                if(treeNode.right!=null){
-                    nextCount++;
-                    queue.offer(treeNode.right);
-                }else {
-                    queue.offer(new TreeNode(101));
-                }
-
+            TreeNode leftPoll = queue.poll();
+            TreeNode rightPoll = queue.poll();
+            if(leftPoll==null&&rightPoll==null){
+                continue;
             }
-            boolean symmetric = checkIsSymmetric(list);
-            if(!symmetric){
+            if((leftPoll==null||rightPoll==null)||(leftPoll.val!=rightPoll.val)){
                 return false;
             }
-
-            if(nextCount==0){
-                break;
-            }
+            queue.offer(leftPoll.left);
+            queue.offer(rightPoll.right);
+            queue.offer(leftPoll.right);
+            queue.offer(rightPoll.left);
         }
         return true;
     }
-    private boolean checkIsSymmetric(ArrayList<Integer> list){
-        if(list==null||list.size()<1){
-            return false;
-        }
-        int size = list.size();
-        int left=0;
-        int right=size-1;
-        while (left<right){
-            if(list.get(left)!=list.get(right)){
-                return false;
-            }
-            left++;
-            right--;
-        }
-        return true;
-    }
+
 }
 //leetcode submit region end(Prohibit modification and deletion)
 
